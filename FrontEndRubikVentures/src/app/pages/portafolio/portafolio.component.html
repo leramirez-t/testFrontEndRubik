@@ -1,0 +1,170 @@
+<!--<section class="ae-container-fluid rk-main">
+    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+         <div class="au-xs-ta-center au-lg-ta-left">
+            <ul class="rk-menu rk-categories-menu">
+                <li class="rk-menu__item"><a href="portfolio.html" class="rk-menu__link">Flex</a>
+                </li>
+                <li class="rk-menu__item"><a href="portfolio-alt.html" class="rk-menu__link">Switch</a>
+                </li>
+                <li class="rk-menu__item"><a href="portfolio-raw.html" class="rk-menu__link">Static</a>
+                </li>
+                <li class="active rk-menu__item"><a href="portfolio-masonry.html" class="rk-menu__link">Masonry</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4"><a href="portfolio-item.html"
+                class="rk-item ae-masonry__item"><img src="assets/img/project-1.jpg" alt="">
+                <div class="item-meta">
+                    <h2>Essential Stationery</h2>
+                    <p>Branding</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-2.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Pickled Tousled</h2>
+                    <p>Art Direction</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-3.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Waistcoat vegan</h2>
+                    <p>Graphic Design</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-4.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Tumblr hammock</h2>
+                    <p>Packaging</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-5.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Biodiesel etsy</h2>
+                    <p>Branding</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-6.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Gentrify artisan</h2>
+                    <p>Graphic Design</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-7.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Plaid austin</h2>
+                    <p>Graphic Design</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-8.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Trust fund</h2>
+                    <p>Packaging</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-9.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Gentrify pork</h2>
+                    <p>Branding</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-10.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Waistcoat ugh</h2>
+                    <p>UI/UX</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-11.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Deep v kogi</h2>
+                    <p>Graphic Design</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-12.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Venmo trust</h2>
+                    <p>Packaging</p>
+                </div>
+            </a><a href="portfolio-item.html" class="rk-item ae-masonry__item"><img src="assets/img/project-13.jpg"
+                    alt="">
+                <div class="item-meta">
+                    <h2>Venmo trust</h2>
+                    <p>Ui/UX</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</section>-->
+
+<div class="container spaceTop">
+
+    <div class="row container_father">
+
+        <div class="col-md-6 ">
+
+            <h1 class="whithe_text">Bienvenido a Rubik Ventures</h1>
+            <h6 class="whithe_text">Creamos empresas digitales, con perspectiva de crecimiento global, junto con grandes
+                corporativos y extraordinarios emprendedores.
+            </h6>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="col-12 style_bar">
+                Ingrese sus datos para ingresar sesion
+            </div>
+            <hr>
+            <form class="color_form was-validated login-form" [formGroup]="formGroup" (ngSubmit)="loginProces()">
+                <div class="form-group">
+
+                    <!--<input type="text" class="form-control is-invalid" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text_personal">Firts Name cannot be empty</small>-->
+
+                    <input type="text" class="form-control" placeholder="Firstname" id="name" name="name" required>
+                    <div class="valid-feedback">Estatus Valido</div>
+                    <div class="invalid-feedback">Completa el campo</div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <!--<input type="text" class="form-control is-invalid" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text_personal">Last Name cannot be empty</small>-->
+
+                    <input type="text" class="form-control" placeholder="Lastname" id="lastname" name="lastname"
+                        required>
+                    <div class="valid-feedback">Estatus Valido</div>
+                    <div class="invalid-feedback">Completa el campo</div>
+                </div>
+
+                <div class="form-group">
+
+                    <!--<input type="text" class="form-control is-invalid" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text_personal">Looks like this is not an email</small>-->
+
+                    <input type="text" class="form-control" placeholder="email" id="email" required
+                        formControlName="email">
+                    <div class="valid-feedback">Estatus Valido</div>
+                    <div class="invalid-feedback">Completa el campo</div>
+                </div>
+
+                <div class="form-group">
+
+                    <!--<input type="text" class="form-control is-invalid" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text_personal">Password cannot be empty</small>-->
+
+                    <input type="password" class="form-control" placeholder="password" id="password" required
+                        formControlName="password">
+                    <div class="valid-feedback">Estatus Valido</div>
+                    <div class="invalid-feedback">Completa el campo</div>
+                </div>
+
+                <button id="formulario_envio" type="button" class="button_color col-12 validar">CLAIM YOUR FREE
+                    TRIAL</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
